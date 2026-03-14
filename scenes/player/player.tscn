@@ -32,6 +32,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p47bc"]
+radius = 27.0
+height = 54.0
 
 [node name="Player" type="CharacterBody2D" unique_id=937159888]
 script = ExtResource("1_dovo2")
@@ -43,4 +45,5 @@ sprite_frames = SubResource("SpriteFrames_qek5x")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899846327]
+position = Vector2(0, -6)
 shape = SubResource("CapsuleShape2D_p47bc")
